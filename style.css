@@ -260,6 +260,11 @@ section {
 /* --- shoutbox --- */
 #shoutbox {
   width: 100%;
+  padding: 6px 8px;
+}
+
+#shoutbox h2 {
+  margin-bottom: 4px;
 }
 
 #shoutbox iframe {
