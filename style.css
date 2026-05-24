@@ -210,7 +210,7 @@ section {
 }
 
 .icon01 {
-  background: url(icon01.png) no-repeat;
+  background: url(assets/icon01.png) no-repeat;
   height: 62px;
   position: absolute;
   right: 10px;
