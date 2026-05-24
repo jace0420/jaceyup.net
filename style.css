@@ -256,3 +256,12 @@ section {
   color: var(--text-sub);
   margin-top: 2px;
 }
+
+/* --- shoutbox --- */
+#shoutbox {
+  width: 100%;
+}
+
+#shoutbox iframe {
+  display: block;
+}
