@@ -1,9 +1,9 @@
 (function () {
-  fetch('https://neocities.org/api/info?sitename=jaceyup')
+  fetch('/hits.json')
     .then(r => r.json())
     .then(data => {
       const el = document.getElementById('hit-counter-digits');
-      if (el) el.textContent = String(data.info.hits).padStart(7, '0');
+      if (el) el.textContent = String(data.hits).padStart(7, '0');
     })
     .catch(() => {});
 })();

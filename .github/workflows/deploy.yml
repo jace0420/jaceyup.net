@@ -11,6 +11,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Fetch hit count
+        run: |
+          HITS=$(curl -sf \
+            -H "Authorization: Bearer ${{ secrets.NEOCITIES_API_TOKEN }}" \
+            https://neocities.org/api/info \
+            | jq '.info.hits // 0')
+          echo "{\"hits\":$HITS}" > hits.json
+
       - name: Deploy to Neocities
         uses: bcomnes/deploy-to-neocities@v3
         with:
