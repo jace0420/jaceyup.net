@@ -229,3 +229,30 @@ section {
 #side-col .s_box02 {
   width: 100%;
 }
+
+/* --- hit counter --- */
+#hit-counter {
+  text-align: center;
+}
+
+#hit-counter-display {
+  background: #000;
+  border: 2px inset #444;
+  padding: 4px 8px;
+  margin: 6px auto;
+  display: inline-block;
+}
+
+#hit-counter-digits {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  color: #00ff41;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.counter-label {
+  font-size: var(--size-sm);
+  color: var(--text-sub);
+  margin-top: 2px;
+}
