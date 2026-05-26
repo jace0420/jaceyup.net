@@ -257,6 +257,44 @@ section {
   margin-top: 2px;
 }
 
+/* --- writing / blog --- */
+.post-list-intro { margin-bottom: 12px; }
+
+.post-entry { margin-bottom: 10px; }
+.post-entry .post-date { font-size: var(--size-sm); color: var(--text-sub); margin: 0 0 2px; }
+.post-entry .post-title { font-family: var(--font-head); font-size: var(--size-lg); margin: 2px 0; }
+.post-entry .post-excerpt { margin: 4px 0; }
+.post-entry .post-readmore { font-size: var(--size-sm); }
+
+/* archive entries */
+.archive-entry {
+  border: 1px dashed var(--border);
+  box-sizing: border-box;
+  margin: 1em 0;
+  padding: 1em;
+  width: 80%;
+  background: var(--nav-bg);
+}
+.archive-entry .post-date { font-size: var(--size-sm); color: var(--text-sub); margin: 0 0 2px; }
+.archive-entry .post-title { font-family: var(--font-head); font-size: var(--size-lg); margin: 2px 0; color: var(--text-sub); }
+.archive-entry .post-excerpt { margin: 4px 0; color: var(--text-sub); }
+.archive-entry .post-readmore { font-size: var(--size-sm); }
+
+.archive-badge {
+  font-family: var(--font-body);
+  font-size: var(--size-sm);
+  background: var(--border);
+  color: var(--surface);
+  padding: 0 4px;
+  letter-spacing: 1px;
+}
+
+/* individual post page */
+.post-header { border-bottom: 1px dashed var(--border); margin-bottom: 10px; padding-bottom: 6px; }
+.post-header .post-date { font-size: var(--size-sm); color: var(--text-sub); margin: 0; }
+.post-body p { margin-bottom: 8px; line-height: 1.7; }
+.post-footer { margin-top: 14px; border-top: 1px dashed var(--border); padding-top: 6px; font-size: var(--size-sm); }
+
 /* --- shoutbox --- */
 #shoutbox {
   width: 100%;
